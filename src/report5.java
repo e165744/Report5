@@ -3,14 +3,9 @@
  */
 public class report5 {
     public static void main(String[] args) {
-        String str = null;
-        try{
-            System.out.println(str.length());
-        }
-        catch(NullPointerException e)
-        {
-            System.out.println("strはnullです！");
-            e.printStackTrace();
-        }
+        String str = "3．14";
+        int i = Integer.parseInt(str);
+        Double value  = Double.parseDouble(str);
+        System.out.println(value.doubleValue());
     }
 }
